@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text To Speech</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="Container">
+      <div class="Main-Body">
+        <h1>Enter Text:</h1>
+        <textarea
+          id="Text"
+          name="text"
+          class="Text-Box"
+          cols="30"
+          rows="10"
+        ></textarea>
+        <button id="btn" class="Btn">Read the Text</button>
+      </div>
+    </div>
+
+    <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+    <script>
+      let Text = document.getElementById("Text");
+      let Btn = document.getElementById("btn");
+
+      Btn.addEventListener("click", () => {
+        responsiveVoice.speak(Text.value);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.Container {
+  display: flex;
+  height: 100vh;
+  background: url(./pexels-rovenimagescom-949587.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.Main-Body {
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 18pc;
+  border-radius: 4px;
+  width: 20pc;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  color: white;
+}
+.Text-Box {
+  margin-top: 10px;
+  height: 10pc;
+  resize: none;
+  background-color: rgba(255, 255, 255, 0.6);
+  outline: none;
+  padding: 4px 4px;
+  font-size: 16px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+.Btn {
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-top: 10px;
+  cursor: pointer;
+  outline: none;
+  font-weight: bold;
+  border-radius: 4px;
+  border: none;
+}
+.Btn:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+}
